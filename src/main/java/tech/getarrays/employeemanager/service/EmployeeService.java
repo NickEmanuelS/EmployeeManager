@@ -35,8 +35,8 @@ public class EmployeeService {
         return employeeRepo.findAll();
     }
 
-public Employee findEmployeeById(Long id) {
-        return employeeRepo.findEmployeeById(id)
-                .orElseThrow(() -> new UserNotFoundException("User by id " + id + " was not found"));
+    public Employee findEmployeeById(Long id) {
+            return employeeRepo.findEmployeeById(id)
+                    .orElseThrow(() -> new UserNotFoundException("User by id " + id + " was not found"));
     }
 }
