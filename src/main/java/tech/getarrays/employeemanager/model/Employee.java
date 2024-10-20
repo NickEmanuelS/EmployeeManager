@@ -3,7 +3,7 @@ package tech.getarrays.employeemanager.model;
 import jakarta.persistence.*;
 
 @Entity
-    public class Employee implements java.io.Serializable {
+public class Employee implements java.io.Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
